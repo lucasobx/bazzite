@@ -9,8 +9,19 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
+dnf5 remove -y \
+    lutris \
+    waydroid \
+    waydroid-selinux \
+    rom-properties \
+    rom-properties-gtk3 \
+    rom-properties-utils \
+    rom-properties-common \
+    rom-properties-thumbnailer-dbus \
+    input-remapper
+
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+dnf5 install -y emacs love
 
 # Use a COPR Example:
 #
