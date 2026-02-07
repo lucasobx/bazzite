@@ -10,6 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 dnf5 remove -y                      \
+    yelp                            \
     lutris                          \
     waydroid                        \
     waydroid-selinux                \
@@ -18,6 +19,8 @@ dnf5 remove -y                      \
     rom-properties-utils            \
     rom-properties-common           \
     rom-properties-thumbnailer-dbus \
+    malcontent-control              \
+    webapp-manager                  \
     input-remapper
 
 # this installs a package from fedora repos
