@@ -24,13 +24,10 @@ dnf5 remove -y                      \
     input-remapper
 
 # this installs a package from fedora repos
-dnf5 install -y emacs love clang
-
-rm -f /usr/share/applications/discourse.desktop
-rm -f /usr/share/applications/system-update.desktop
-rm -f /usr/share/applications/bazzite-steam-bpm.desktop
-rm -f /usr/share/applications/bazzite-documentation.desktop
-rm -f /usr/share/applications/waydroid-container-restart.desktop
+dnf5 install -y                     \
+    emacs                           \
+    clang                           \
+    love                            \
 
 # Use a COPR Example:
 #
@@ -38,6 +35,12 @@ rm -f /usr/share/applications/waydroid-container-restart.desktop
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+
+rm -f /usr/share/applications/discourse.desktop
+rm -f /usr/share/applications/system-update.desktop
+rm -f /usr/share/applications/bazzite-steam-bpm.desktop
+rm -f /usr/share/applications/bazzite-documentation.desktop
+rm -f /usr/share/applications/waydroid-container-restart.desktop
 
 #### Example for enabling a System Unit File
 
