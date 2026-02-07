@@ -26,6 +26,12 @@ dnf5 remove -y                      \
 # this installs a package from fedora repos
 dnf5 install -y emacs love clang
 
+rm -f /usr/share/applications/discourse.desktop
+rm -f /usr/share/applications/system-update.desktop
+rm -f /usr/share/applications/bazzite-steam-bpm.desktop
+rm -f /usr/share/applications/bazzite-documentation.desktop
+rm -f /usr/share/applications/waydroid-container-restart.desktop
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
