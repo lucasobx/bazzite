@@ -27,6 +27,7 @@ dnf5 remove -y                      \
 dnf5 install -y                     \
     emacs                           \
     clang                           \
+    unrar                           \
     love                            \
 
 # Use a COPR Example:
